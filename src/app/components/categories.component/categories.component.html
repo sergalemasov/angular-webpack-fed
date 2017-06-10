@@ -1,0 +1,3 @@
+<div class="my-app-categories__category" *ngFor="let category of categories | async" routerLink="/category/{{category.id}}">
+  <img src="http://via.placeholder.com/150?text={{category.name}}" />
+</div>

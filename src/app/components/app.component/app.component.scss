@@ -1,0 +1,16 @@
+@import '../../../scss/variables.scss';
+
+.my-app {
+	&:host {
+		display: block;
+		height: auto;
+		min-height: 100%;
+	}
+
+	&__content {
+		padding-bottom: $footer-height;
+		width: 80%;
+    margin: 0 auto;
+	}
+}
+

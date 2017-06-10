@@ -1,14 +1,35 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
+import { ROUTES } from './app.routes';
+import { 
+  AppComponent,
+  CategoriesComponent,
+  CategoryComponent,
+  NoContentComponent,
+  HeaderComponent,
+  FooterComponent,
+  LogoComponent
+} from './components';
+import { CategoriesService } from './services';
 
 @NgModule({
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(ROUTES)
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    CategoriesComponent,
+    CategoryComponent,
+    NoContentComponent,
+    HeaderComponent,
+    FooterComponent,
+    LogoComponent
+  ],
+  providers: [
+    CategoriesService
   ],
   bootstrap: [
     AppComponent

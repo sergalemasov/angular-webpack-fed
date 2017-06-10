@@ -1,0 +1,13 @@
+.my-app-category {
+  &:host {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__product {
+    margin: 15px;
+    cursor: pointer;
+  }
+}

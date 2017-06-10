@@ -1,0 +1,28 @@
+@import '../../../scss/variables.scss';
+
+.my-app-logo {
+  $img-height: 50px;
+
+  &:host {
+    display: block;
+    height: $header-height;
+    padding: ($header-height - $img-height)/2 0;
+    cursor: pointer;
+  }
+
+	&__title {
+		line-height: $img-height;
+		font-size: 1.6rem;
+	}
+
+	&__img {
+		width: auto;
+		height: $img-height;
+	}
+
+	&__img-wrapper,
+	&__title {
+		display: inline-block;
+		vertical-align: top;
+	}
+}

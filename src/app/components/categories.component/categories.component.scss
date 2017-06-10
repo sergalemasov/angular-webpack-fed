@@ -1,0 +1,13 @@
+.my-app-categories {
+  &:host {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__category {
+    margin: 20px;
+    cursor: pointer;
+  }
+}

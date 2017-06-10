@@ -1,0 +1,14 @@
+@import '../../../scss/variables.scss';
+
+.my-app-header {
+  &:host {
+    display: block;
+    height: $header-height;
+    background-color: blue;
+    color: white;
+  }
+
+  &__logo {
+    margin-left: 20px;
+  }
+}
